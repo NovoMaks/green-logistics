@@ -24,10 +24,10 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
   let config = {
     method: 'post',
     maxBodyLength: Infinity,
-    url: 'https://logistic.fastsol.ru/Services/ApiV2/2105/orders/set',
+    url: 'https://logistic.fastsol.ru/Services/ApiV2/2047/orders/set',
     headers: { 
       'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Mobile Safari/537.36', 
-      'Token': 'c29ee47b61a2ebe1130d2681933a4cfd_JMcfHCzhya', 
+      'Token': '0f5ce6a53a6ebbfed610ba7426c4b051_L9bjqIw72z', 
       'Content-Type': 'application/json'
     },
     data : data
