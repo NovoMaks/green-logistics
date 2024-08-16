@@ -2,7 +2,7 @@ import type { VercelRequest, VercelResponse } from '@vercel/node'
 import axios from 'axios';
 
 export default function handler(req: VercelRequest, res: VercelResponse) {
-  const { name, email, phone, from, to } = req.query
+  const { name, email, phone, from, to } = req.body
 
   let data = JSON.stringify({
     "customer": {
@@ -36,7 +36,7 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
   axios.request(config)
   .then((response) => {
     return res.json({
-      message: `Hello ${name}!`,
+      message: response,
     })
   })
   .catch((error) => {
